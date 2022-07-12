@@ -25,7 +25,7 @@ export function Home() {
       />
 
       <LinearGradient
-        colors={['#5e5680', '#4f4579']}
+        colors={['#5e5680', '#4f4578']}
         style={{
           flex: 1
         }}
