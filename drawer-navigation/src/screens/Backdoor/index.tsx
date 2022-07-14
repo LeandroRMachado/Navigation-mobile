@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/native';
 
-type ParamsProps = {
+type ParamProps = {
   name: string
 }
 
 export function Backdoor() {
   const navigation = useNavigation();
   const route = useRoute();
-  const { name } = route.params as ParamsProps;
+  const { name } = route.params as ParamProps;
 
   function backScreen() {
     navigation.goBack();
@@ -23,7 +23,7 @@ export function Backdoor() {
       justifyContent: 'center'
     }}>
 
-      <Text style={{fontSize: 30, }}>
+      <Text style={{ fontSize: 30, }}>
         {name}
       </Text>
 
